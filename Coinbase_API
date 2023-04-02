@@ -1,0 +1,7 @@
+sudo pip install requests
+import requests
+import json
+
+response = requests.get('https://api.coinbase.om/v2/prices/BTC-USD/spot')
+data = json.dumps(response.json())
+print(data)
